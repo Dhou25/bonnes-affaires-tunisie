@@ -1,0 +1,65 @@
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# --- Logs ---
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- data-pipeline (Python) ---
+data-pipeline/.venv/
+data-pipeline/venv/
+data-pipeline/__pycache__/
+data-pipeline/**/__pycache__/
+data-pipeline/**/*.py[cod]
+data-pipeline/**/*$py.class
+data-pipeline/.pytest_cache/
+data-pipeline/.mypy_cache/
+data-pipeline/.ruff_cache/
+data-pipeline/.coverage
+data-pipeline/htmlcov/
+data-pipeline/dist/
+data-pipeline/build/
+data-pipeline/*.egg-info/
+data-pipeline/.ipynb_checkpoints/
+data-pipeline/data/raw/
+data-pipeline/data/processed/
+data-pipeline/data/cache/
+data-pipeline/scraped/
+data-pipeline/exports/
+
+# --- web-app (Node / Next.js) ---
+web-app/node_modules/
+web-app/.pnp/
+web-app/.pnp.js
+web-app/.next/
+web-app/out/
+web-app/build/
+web-app/dist/
+web-app/coverage/
+web-app/.turbo/
+web-app/.vercel/
+web-app/*.tsbuildinfo
+web-app/next-env.d.ts
+
+# --- Supabase (if used by web-app) ---
+web-app/.supabase/
